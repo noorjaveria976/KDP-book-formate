@@ -13,7 +13,9 @@ body {
 .top-bar marquee {
   width: 60%;
 }
-
+.green{
+    background: #1f5c5a;
+}
 /* Hero Section */
 .hero-section {
   padding: 80px 0;
@@ -53,9 +55,9 @@ body {
 .spinning-logo {
   width: 110px;
   height: 110px;
-  border: 4px solid #0d6e6a;
+  border: 4px dotted #0d6e6a;
   border-radius: 50%;
-  margin: -50px auto 0;
+  margin: -50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,9 +65,13 @@ body {
   background: #fff;
 }
 
+/* .spin_logo{
+animation: spin 6s linear infinite;
+} */
 .spinning-logo img {
   width: 60px;
 }
+
 
 @keyframes spin {
   from {
@@ -79,10 +85,11 @@ body {
 /* Logos Marquee */
 .logos-section {
   padding: 40px 0;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
 }
 
 .logos-section img {
+  width: 60px;
   margin: 0 40px;
   vertical-align: middle;
 }
