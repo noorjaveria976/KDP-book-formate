@@ -386,3 +386,36 @@ p {
     transform: translateX(-50%);
   }
 }
+/* ================= TEAM CARDS ================= */
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; /* important for marquee */
+  margin: 0 10px; /* spacing between cards */
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media(max-width:767px){
+  .team-card{
+    width:150px !important;
+  }
+  .team-card img{
+    width:90px;
+    height:90px;
+  }
+}
+
+@media(min-width:768px) and (max-width:991px){
+  .team-card{
+    width:180px !important;
+  }
+  .team-card img{
+    width:110px;
+    height:110px;
+  }
+}
+
