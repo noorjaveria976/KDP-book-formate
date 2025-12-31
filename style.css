@@ -1,93 +1,90 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+:root{
+  --primary:#0B5ED7;
+  --dark:#0A1D37;
+  --light:#EAF2FF;
 }
 
-/* Top Bar */
-.top-bar {
-  background: #1f5c5a;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 15px;
+body{
+  font-family:Poppins, sans-serif;
 }
 
-.top-bar marquee {
-  width: 60%;
-}
-.green{
-    background: #1f5c5a;
-}
-/* Hero Section */
-.hero-section {
-  padding: 80px 0;
+/* ===== TOP HEADER ===== */
+.top-header{
+  background:var(--dark);
+  color:#fff;
+  font-size:14px;
+  padding:8px 0;
 }
 
-.badge-custom {
-  background: #e6f4f1;
-  color: #0d6e6a;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: 600;
+/* ===== NAVBAR ===== */
+.main-navbar{
+  top:40px;
+  background:#fff;
+  transition:0.3s;
 }
 
-.hero-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-top: 20px;
+.navbar-brand{
+  color:var(--primary);
+  font-weight:700;
 }
 
-.hero-text {
-  margin: 20px 0;
-  color: #555;
+.nav-link{
+  color:#1F2933 !important;
+  margin-left:20px;
 }
 
-.hero-buttons .btn {
-  margin-right: 10px;
+.nav-link.active,
+.nav-link:hover{
+  color:var(--primary)!important;
 }
 
-/* Hero Image */
-.hero-img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 20px;
+/* ===== HERO ===== */
+.hero-section{
+  padding-top:160px;
+  background:linear-gradient(180deg,var(--light),#fff);
 }
 
-/* Spinning Logo */
-.spinning-logo {
-  width: 110px;
-  height: 110px;
-  border: 4px dotted #0d6e6a;
-  border-radius: 50%;
-  margin: -50px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: spin 6s linear infinite;
-  background: #fff;
+.hero-content h1{
+  font-size:52px;
+  font-weight:700;
 }
 
-
-.spinning-logo img {
-  width: 60px;
+.hero-content span{
+  color:var(--primary);
 }
 
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-content p{
+  margin:20px 0;
+  max-width:500px;
 }
 
-/* Logos Marquee */
-.logos-section {
-  padding: 40px 0;
-  /* background: #f8f9fa; */
+.hero-img{
+  animation:float 4s ease-in-out infinite;
 }
 
-.logos-section img {
-  width: 60px;
-  margin: 0 40px;
-  vertical-align: middle;
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-15px)}
+}
+
+/* ===== LOGOS MARQUEE ===== */
+.logos-marquee{
+  overflow:hidden;
+  margin-top:60px;
+}
+
+.logos-track{
+  display:flex;
+  width:max-content;
+  animation:scroll 20s linear infinite;
+}
+
+.logos-track img{
+  height:50px;
+  margin-right:60px;
+}
+
+@keyframes scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
 }
