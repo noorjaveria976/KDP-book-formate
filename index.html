@@ -1,86 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ITSM UI</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Support & Maintenance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style 1.css">
 </head>
+
 <body>
 
-<!-- ===== TOP HEADER ===== -->
-<div class="top-header">
-  <div class="container d-flex justify-content-between">
-    <span>Delivering smart IT service solutions</span>
-    <span>📞 +46 123 456 789</span>
-  </div>
-</div>
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-bar">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="left-info">
+                🕒 Mon–Sat, 8:00–4:00 &nbsp;&nbsp; 📞 +92 345 6388499
+            </div>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg fixed-top main-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="#">ITSM</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                ⭐ Reliable IT Support Solutions &nbsp;&nbsp; ⚙ Smart Problem Management & Root Cause Analysis
+                &nbsp;&nbsp; 📍 Location 12
+            </marquee>
+        </div>
     </div>
-  </div>
-</nav>
 
-<!-- ===== HERO ===== -->
-<section class="hero-section">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/ITSM LOGO new.jpg" alt="logo" style="width: 60px;">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <a href="#" class="btn btn-primary green px-4">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+   <section class="hero-section py-5">
   <div class="container">
     <div class="row align-items-center">
 
-      <div class="col-lg-6 hero-content">
-        <h1>
-          IT Service<br>
-          <span>Management</span><br>
-          Solutions
-        </h1>
-        <p>
-          Helping businesses streamline operations with modern ITSM tools
-          and scalable digital solutions.
-        </p>
-        <a href="#" class="btn btn-primary">Get Started</a>
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <span class="badge bg-light text-success mb-2">IT SUPPORT & MAINTENANCE</span>
+        <h1 class="fw-bold">Reliable IT Services for <br> Govt Schools & Colleges</h1>
+        <p>We provide free IT support and maintenance to government institutions.</p>
+        <div class="d-flex flex-column flex-sm-row gap-2">
+          <a href="#" class="btn btn-success">Request Support</a>
+          <a href="#" class="btn btn-outline-secondary">View Services ↗</a>
+        </div>
+
+        <!-- Logos Marquee -->
+        <div class="mt-4 overflow-hidden">
+          <div class="d-flex gap-4 animate-marquee">
+            <img src="./img/ITSM LOGO new.jpg" alt="" class="img-fluid" style="width:60px;">
+            <img src="./img/logo tef.png" alt="" class="img-fluid" style="width:60px;">
+            <img src="./img/logo-dark.png" alt="" class="img-fluid" style="width:60px;">
+            <img src="https://via.placeholder.com/120x60?text=Logo+5" alt="" class="img-fluid" style="width:60px;">
+          </div>
+        </div>
       </div>
 
+      <!-- Right Image + Spinning Logo -->
       <div class="col-lg-6 text-center">
-        <img src="assets/images/hero.png" class="hero-img" alt="">
+        <img src="./img/cover pic.jpg" class="img-fluid rounded-3 mb-3" alt="IT Work">
+        <div class="mx-auto spinning-logo">
+          <img src="./img/ITSM LOGO new.jpg" class="img-fluid" style="width:60px;">
+        </div>
       </div>
 
     </div>
-
-    <!-- ===== LOGOS MARQUEE ===== -->
-    <div class="logos-marquee">
-      <div class="logos-track">
-        <img src="assets/images/logo1.png">
-        <img src="assets/images/logo2.png">
-        <img src="assets/images/logo3.png">
-        <img src="assets/images/logo4.png">
-        <img src="assets/images/logo5.png">
-        <!-- duplicate for smooth loop -->
-        <img src="assets/images/logo1.png">
-        <img src="assets/images/logo2.png">
-      </div>
-    </div>
-
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+
+    <!-- ================= ABOUT SECTION ================= -->
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0">
+        <img src="./img/about.jpg" class="about-img" alt="About ITSM">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-6">
+        <span class="badge-custom">ABOUT ITSM</span>
+
+        <h2 class="about-title">
+          Trusted IT Support for <br>
+          Government Institutions
+        </h2>
+
+        <p class="about-text">
+          ITSM provides reliable and cost-effective IT support and maintenance
+          services to government schools and colleges. Our mission is to ensure
+          uninterrupted digital operations and secure IT infrastructure.
+        </p>
+
+        <ul class="about-list">
+          <li>✔ Free IT Support for Govt Institutions</li>
+          <li>✔ Hardware & Software Maintenance</li>
+          <li>✔ Network & Security Management</li>
+          <li>✔ Quick Response & Issue Resolution</li>
+        </ul>
+
+        <a href="#" class="btn btn-primary green mt-3">
+          Learn More
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES / MISSION SECTION ================= -->
+<section class="services-section py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <!-- Left: Mission -->
+      <div class="col-lg-6">
+        <div class="d-flex flex-column gap-3">
+          <img src="./img/project-manager.jpg" class="img-fluid rounded mb-3" alt="Project Manager">
+          <h3>Our Mission</h3>
+          <p>Deliver reliable IT support and maintenance to government institutions efficiently and transparently.</p>
+          <a href="#" class="btn btn-outline-success">Watch Video</a>
+        </div>
+      </div>
+
+      <!-- Right: Services -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-laptop" style="font-size:2rem;"></i>
+              <h5 class="mt-2">IT Support</h5>
+              <p>Comprehensive support for all IT systems and devices.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-gear" style="font-size:2rem;"></i>
+              <h5 class="mt-2">Maintenance</h5>
+              <p>Scheduled maintenance for smooth operations.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-shield-lock" style="font-size:2rem;"></i>
+              <h5 class="mt-2">Security</h5>
+              <p>Protecting data and networks from threats.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100 text-center">
+              <i class="bi bi-bar-chart" style="font-size:2rem;"></i>
+              <h5 class="mt-2">Monitoring</h5>
+              <p>Real-time monitoring and issue resolution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="how-it-works py-5 bg-white">
+  <div class="container text-center mb-5">
+    <span class="badge bg-light text-success mb-2">PROCESS</span>
+    <h2>How It Works</h2>
+    <p>Simple and transparent process to deliver reliable IT services.</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-3">
+        <div class="work-step p-3 text-center bg-light rounded">
+          <div class="step-icon mb-2">01</div>
+          <h5>Request Support</h5>
+          <p>Submit your IT support request through official channels.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="work-step p-3 text-center bg-light rounded">
+          <div class="step-icon mb-2">02</div>
+          <h5>Issue Analysis</h5>
+          <p>Technical team identifies root cause.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="work-step p-3 text-center bg-light rounded">
+          <div class="step-icon mb-2">03</div>
+          <h5>Implementation</h5>
+          <p>Solution is implemented efficiently.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="work-step p-3 text-center bg-light rounded">
+          <div class="step-icon mb-2">04</div>
+          <h5>Ongoing Support</h5>
+          <p>Continuous monitoring and support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section class="projects-section py-5 bg-light">
+  <div class="container text-center mb-5">
+    <span class="badge bg-light text-success mb-2">OUR PROJECTS</span>
+    <h2>Successful IT Projects Delivered</h2>
+    <p>Explore recent IT support and infrastructure projects.</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5>School Network Upgrade</h5>
+            <p>Network infrastructure upgrade for high schools.</p>
+            <a href="#" class="text-success">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/project2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5>College IT Maintenance</h5>
+            <p>Ongoing IT support for public colleges.</p>
+            <a href="#" class="text-success">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="./img/project3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5>Cyber Security Setup</h5>
+            <p>Security hardening and malware protection.</p>
+            <a href="#" class="text-success">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= TESTIMONIALS SECTION (MARQUEE) ================= -->
+<section class="testimonials-section py-5 bg-white">
+  <div class="container text-center mb-5">
+    <span class="badge bg-light text-success mb-2">TESTIMONIALS</span>
+    <h2>What Our Clients Say</h2>
+    <p>Feedback from government schools and colleges.</p>
+  </div>
+
+  <div class="overflow-hidden">
+    <div class="d-flex gap-3 animate-marquee">
+      <!-- Repeat testimonial card structure -->
+      <div class="card testimonial-card p-3 flex-shrink-0" style="width:320px;">
+        <p>“ITSM’s support helped our school run smoothly with uninterrupted IT services.”</p>
+        <div class="d-flex align-items-center mt-2">
+          <img src="./img/testimonial1.jpg" class="rounded-circle me-2" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Mr. Ahmed Khan</h6>
+            <small>Principal, Govt High School</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card testimonial-card p-3 flex-shrink-0" style="width:320px;">
+        <p>“Thanks to ITSM, our college’s IT infrastructure has never been more secure.”</p>
+        <div class="d-flex align-items-center mt-2">
+          <img src="./img/testimonial2.jpg" class="rounded-circle me-2" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Ms. Sara Malik</h6>
+            <small>IT Coordinator, Govt College</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card testimonial-card p-3 flex-shrink-0" style="width:320px;">
+        <p>“Quick response, reliable support and excellent problem-solving. ITSM is a life-saver!”</p>
+        <div class="d-flex align-items-center mt-2">
+          <img src="./img/testimonial3.jpg" class="rounded-circle me-2" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Mr. Bilal Shah</h6>
+            <small>Head of IT, Public School</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
