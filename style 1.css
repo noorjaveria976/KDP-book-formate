@@ -369,7 +369,7 @@ p {
 .client-info h6 {
   font-weight: 700;
   margin: 0;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .client-info span {
