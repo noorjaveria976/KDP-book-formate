@@ -383,7 +383,7 @@ p {
 /* Marquee animation */
 @keyframes scroll-testimonials {
   0% {
-    /* transform: translateX(0); */
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
