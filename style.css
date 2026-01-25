@@ -329,7 +329,7 @@ p {
 
 .testimonial-track {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
   animation: scroll-testimonials 20s linear infinite;
 }
 
@@ -358,7 +358,7 @@ p {
 }
 
 .testimonial-footer {
-  /* display: flex; */
+  display: flex;
   align-items: center;
 }
 
