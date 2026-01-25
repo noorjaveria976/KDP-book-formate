@@ -358,7 +358,7 @@ p {
 }
 
 .testimonial-footer {
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
