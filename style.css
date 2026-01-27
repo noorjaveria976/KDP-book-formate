@@ -317,7 +317,7 @@ p {
 /* ================= TESTIMONIALS MARQUEE (UPDATED) ================= */
 .testimonials-section {
   padding: 90px 0;
-  background: #f7fdfc;
+  /* background: #f7fdfc; */
 }
 
 .testimonial-marquee {
