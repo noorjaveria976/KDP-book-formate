@@ -274,7 +274,7 @@ p {
   background: #f7fdfc;
   border-radius: 18px;
   overflow: hidden;
-  height: 100%;
+  /* height: 100%; */
   transition: 0.3s ease;
 }
 
