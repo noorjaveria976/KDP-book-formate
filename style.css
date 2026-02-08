@@ -135,7 +135,7 @@ p {
 .about-text {
   color: #555;
   margin-bottom: 20px;
-  /* line-height: 1.7; */
+  line-height: 1.7;
 }
 
 .about-list {
