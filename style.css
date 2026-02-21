@@ -80,7 +80,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: spin 5s linear infinite;
+  animation: spin 7s linear infinite;
   background: #fff;
   margin: 0 auto;
 }
