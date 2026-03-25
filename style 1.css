@@ -404,7 +404,7 @@ p {
     width:150px !important;
   }
   .team-card img{
-    /* width:90px; */
+    width:90px;
     height:90px;
   }
 }
