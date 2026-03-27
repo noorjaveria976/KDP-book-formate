@@ -328,7 +328,7 @@ p {
 
 .testimonial-track {
   display: flex;
-  gap: 30px;
+  gap: 31px;
   animation: scroll-testimonials 20s linear infinite;
 }
 
