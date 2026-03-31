@@ -306,7 +306,7 @@ p {
 .project-content a {
   color: #1f5c5a;
   font-weight: 600;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 .project-content a:hover {
