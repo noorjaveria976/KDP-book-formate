@@ -93,7 +93,7 @@ p {
 /* Marquee Animation */
 .animate-marquee {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 21s linear infinite;
 }
 
 @keyframes marquee {
