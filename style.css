@@ -331,7 +331,7 @@ p {
 .testimonial-track {
   display: flex;
   gap: 30px;
-  animation: scroll-testimonials 21s linear infinite;
+  animation: scroll-testimonials 20s linear infinite;
 }
 
 .testimonial-card {
